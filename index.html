@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.c360a.salesforce.com/beacon/c360a/87dc3b07-4de0-475e-9e9c-4bf8851a97e7/scripts/c360a.min.js"></script>
     <title>Simple Form</title>
     <style>
         * {
@@ -120,13 +121,14 @@
             <label for="userInput">Your Name</label>
             <input 
                 type="text" 
-                id="userInput" 
+                id="userInput"
+                class="userInput" 
                 placeholder="Enter your name"
                 required
             />
         </div>
         
-        <button onclick="handleSubmit()">Submit</button>
+        <button onclick="handleSubmit()" id="buttonMCP" class="buttonMCP">Submit</button>
         
         <div id="message" class="message"></div>
     </div>
